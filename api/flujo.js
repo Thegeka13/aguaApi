@@ -14,8 +14,8 @@ export default async function handler(req, res) {
     }
 
     const client = await clientPromise;
-    const db = client.db("SentryHouseGas"); // Cambia aquí por tu nombre de BD
-    const collection = db.collection("Agua"); // Cambia por tu colección
+    const db = client.db("SentryHouseGas"); 
+    const collection = db.collection("Agua"); 
 
     const result = await collection.insertOne(data);
 
