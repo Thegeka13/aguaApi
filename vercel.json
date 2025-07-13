@@ -4,5 +4,11 @@
     "api/flujo.js": {
       "runtime": "nodejs18.x"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/flujo",
+      "dest": "api/flujo.js"
+    }
+  ]
 }
