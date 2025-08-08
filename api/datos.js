@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     const datos = await collection
       .find({})
       .sort({ _id: -1 }) // del más nuevo al más viejo
-      .limit(10)
+      .limit(1)
       .toArray();
 
     res.status(200).json(datos);
